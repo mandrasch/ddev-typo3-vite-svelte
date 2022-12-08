@@ -137,7 +137,7 @@ Thanks to https://blog.blue-side.de/2021/02/benutzung-von-env-in-typo3/.
 
 Finally created an HTML block:
 
-TODO: Add screenshot for HTML block
+- TODO: Add screenshot for HTML block
 
 ## Other resources
 
