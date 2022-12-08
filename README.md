@@ -135,6 +135,10 @@ Use dotenv-connector for fast switch between `Production/Live` and `Development/
 
 Thanks to https://blog.blue-side.de/2021/02/benutzung-von-env-in-typo3/. 
 
+Finally created an HTML block:
+
+TODO: Add screenshot for HTML block
+
 ## Other resources
 
 Looking for LaravelMix? Coming soon! (https://github.com/mandrasch/ddev-typo3-mix-svelte)
