@@ -1,28 +1,57 @@
 # ddev-typo3-vite-svelte
 
+Svelte meets typo3 + vite in DDEV. 🧡 Fork of [fgeierst/typo3-vite-demo](https://github.com/fgeierst/typo3-vite-demo). 
 
-Heavily inspired by [fgeierst/typo3-vite-demo](https://github.com/fgeierst/typo3-vite-demo).
+- 
+- 
+- 
+
+Status: Work in Progesss.
+
+Thanks very much to [@bokunomaxi](https://github.com/bokunomaxi) for typo3 support!
 
 ## Local setup (first time)
 
 These are the steps needed after you clone this repository:
 
 ```bash
-ddev start && ddev composer install && ddev restore --latest && ddev launch
+ddev start && \
+    ddev composer install && \
+    ddev restore --latest && \
+    ddev cp .env.example .env && \
+    ddev launch
 ```
+
+You can access typo3 via https://ddev-typo3-vite-svelte.ddev.site/typo3 
 
 User: `admin`
 Password: `VwM308w5Xsuxa4C`
 
 ## Local development (vite)
 
-Run
+To start local development with vite, run:
 
 ```bash
 ddev npm run dev 
 ```
 
-or `ddev vite-server start` / `ddev vite-serve stop`. 
+(You can also use `ddev vite-server start` / `ddev vite-serve stop`). 
+
+## Simulate live (production) site locally
+
+Run a vite build for production:
+
+```bash
+ddev npm run build
+```
+
+Switch applicationContext to production in `.env`:
+
+```bash
+# Switch easily between Development/Local and Production/Live
+# TYPO3_CONTEXT="Development/Local"
+TYPO3_CONTEXT="Production/Live"
+```
 
 ## How was this created?
 
@@ -46,6 +75,10 @@ Custom site package:
 - Installed package via composer
     - docs: https://docs.typo3.org/m/typo3/tutorial-sitepackage/main/en-us/ExtensionInstallation/Index.html#extension-installation-in-composer-mode
     - `ddev composer require no-company/svelte-demo:@dev`
+
+Add svelte-demo to the static includes:
+
+![Screenshot edit whole template record, tab includes, add svelte-demo](.gh-screenshots/screenshot_include_static.png?raw=true)
 
 NodeJS Installation:
 
@@ -76,9 +109,18 @@ ddev restart
 Created `.ddev/env` for npm:
 
 ```bash
-
-
+# start vite
+VITE_PROJECT_DIR=.
+VITE_PRIMARY_PORT=5173
+VITE_SECONDARY_PORT=5273
+VITE_JS_PACKAGE_MGR=npm
+# end vite
 ```
 
+- Used typoscript snippets and user function for loading vite from https://github.com/fgeierst/typo3-vite-demo
 
-- Used typoscript snippets for loading vite from https://github.com/fgeierst/typo3-vite-demo
+Use dotenv-connector for fast switch between `Production/Live` and `Development/Local`:
+
+- `ddev composer req helhum/dotenv-connector`
+
+Thanks to https://blog.blue-side.de/2021/02/benutzung-von-env-in-typo3/. 
