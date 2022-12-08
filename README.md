@@ -24,9 +24,8 @@ These are the steps needed after you clone this repository:
 
 ```bash
 ddev start && \
-    ddev composer install && \
-    ddev restore --latest && \
     ddev cp .env.example .env && \
+    ddev composer install && \
     ddev snapshot restore --latest && \
     ddev launch
 ```
