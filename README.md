@@ -1,14 +1,22 @@
 # ddev-typo3-vite-svelte
 
-Svelte meets typo3 + vite in DDEV. 🧡 Fork of [fgeierst/typo3-vite-demo](https://github.com/fgeierst/typo3-vite-demo). 
+Svelte meets typo3 + vite in DDEV. 🧡 
 
-- 
-- 
-- 
+![Screenshot block with svelte input binding](./gh-screenshots/teaser.png?raw=true)
 
-Status: Work in Progesss.
+Fork of [fgeierst/typo3-vite-demo](https://github.com/fgeierst/typo3-vite-demo). 
 
-Thanks very much to [@bokunomaxi](https://github.com/bokunomaxi) for typo3 support!
+Status: Work in Progress. 🧑‍🔧
+
+- https://github.com/drud/ddev ([Discord](https://discord.gg/hCZFfAMc5k))
+- https://github.com/torenware/ddev-viteserve
+- https://github.com/helhum/dotenv-connector
+- https://vitejs.dev/
+- https://github.com/sveltejs/vite-plugin-svelte
+
+Thanks very much to [@bokunomaxi](https://github.com/bokunomaxi) for typo3 support! Looking for a solution for LaravelMix + Svelte? We're working on a demo repository as well!
+
+Disclaimer: I'm a typo3 noob. Suggestions welcome.
 
 ## Local setup (first time)
 
@@ -19,10 +27,11 @@ ddev start && \
     ddev composer install && \
     ddev restore --latest && \
     ddev cp .env.example .env && \
+    ddev snapshot restore --latest && \
     ddev launch
 ```
 
-You can access typo3 via https://ddev-typo3-vite-svelte.ddev.site/typo3 
+You can access typo3 via https://ddev-typo3-vite-svelte.ddev.site/typo3: 
 
 User: `admin`
 Password: `VwM308w5Xsuxa4C`
@@ -35,9 +44,9 @@ To start local development with vite, run:
 ddev npm run dev 
 ```
 
-(You can also use `ddev vite-server start` / `ddev vite-serve stop`). 
+_You can also use `ddev vite-server start` / `ddev vite-serve stop`)_
 
-## Simulate live (production) site locally
+## Simulate production site (live) locally
 
 Run a vite build for production:
 
