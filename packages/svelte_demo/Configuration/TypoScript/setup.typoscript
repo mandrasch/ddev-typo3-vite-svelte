@@ -160,10 +160,38 @@ page {
     }
 
     includeJSFooter {
-        svelte_demo_scripts = EXT:svelte_demo/Resources/Public/JavaScript/Dist/scripts.js
     }
 }
 
+################
+#### VITE ####
+################
+
+# Fork of https://github.com/fgeierst/typo3-vite-demo/blob/master/packages/typo3_vite_demo/Configuration/TypoScript/setup.typoscript (thx!)
+
+# In development mode, JS and CSS are injected from the Vite dev server.
+[applicationContext == "Development/Local"]
+    page.headerData {
+        # TODO: shorthand src=":" did not work?
+        10 = TEXT
+        # 10.value = <script type="module" src=":5173/@vite/client"></script>
+        10.value = <script type="module" src="https://ddev-typo3-vite-svelte.ddev.site:5173/@vite/client"></script>
+        20 = TEXT
+        # 20.value = <script type="module" src=":5173/packages/svelte_demo/Resources/Private/JavaScript/main.js"></script>
+        20.value = <script type="module" src="https://ddev-typo3-vite-svelte.ddev.site:5173/packages/svelte_demo/Resources/Private/JavaScript/main.js"></script>
+    }
+[END]
+
+# In production mode read the hashed JS and CSS file names from Vite generated manifest.json.
+# Simulate a live environment, open https://live.ddev-typo3-vite-svelte.ddev.site
+[applicationContext == "Production/Live"]
+    page.headerData { 
+        10 = USER_INT
+        10 {
+            userFunc = NoCompany\SvelteDemo\UserFunctions\InsertViteAssets->getScriptTags
+        }
+    }
+[END]
 
 ################
 #### CONFIG ####
