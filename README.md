@@ -4,7 +4,7 @@ Svelte meets typo3 + vite in DDEV. 🧡
 
 ![Screenshot block with svelte input binding](./gh-screenshots/teaser.png?raw=true)
 
-Fork of [fgeierst/typo3-vite-demo](https://github.com/fgeierst/typo3-vite-demo). 
+This demo repository is a fork of [fgeierst/typo3-vite-demo](https://github.com/fgeierst/typo3-vite-demo). 
 
 Status: Work in Progress. 🧑‍🔧
 
@@ -44,7 +44,7 @@ To start local development with vite, run:
 ddev npm run dev 
 ```
 
-_You can also use `ddev vite-server start` / `ddev vite-serve stop`)_
+_You can also use `ddev vite-serve start` / `ddev vite-serve stop`)_
 
 ## Simulate production site (live) locally
 
@@ -74,7 +74,7 @@ ddev config --project-type=typo3 --docroot=public --create-docroot --php-version
 	ddev launch
 
 # Finish installation in browser with database:'db',db-user:'db',host:'db'
-# Selected "Create empty starting page ""
+# Selected option "Create empty starting page"
 ```
 
 Custom site package:
