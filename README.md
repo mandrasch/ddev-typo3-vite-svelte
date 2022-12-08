@@ -2,7 +2,7 @@
 
 Svelte meets typo3 + vite in DDEV. 🧡 
 
-![Screenshot block with svelte input binding](./gh-screenshots/teaser.png?raw=true)
+![Screenshot block with svelte input binding](.gh-screenshots/teaser.png?raw=true)
 
 This demo repository is a fork of [fgeierst/typo3-vite-demo](https://github.com/fgeierst/typo3-vite-demo). 
 
