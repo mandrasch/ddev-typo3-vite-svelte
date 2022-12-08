@@ -14,6 +14,7 @@
 	},
 	"require": {
 		"helhum/typo3-console": "^7.0.2",
+		"no-company/svelte-demo": "@dev",
 		"typo3/cms-backend": "^11.5.0",
 		"typo3/cms-belog": "^11.5.0",
 		"typo3/cms-beuser": "^11.5.0",
@@ -46,5 +47,11 @@
 		"post-autoload-dump": [
 			"@typo3-cms-scripts"
 		]
-	}
+	},
+	"repositories": [
+		{
+		   "type": "path",
+		   "url": "./packages/*"
+		}
+	 ]
 }

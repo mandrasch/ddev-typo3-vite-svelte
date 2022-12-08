@@ -1,0 +1,23 @@
+{
+    "name": "no-company/svelte-demo",
+    "type": "typo3-cms-extension",
+    "description": "",
+    "homepage": "https://mandrasch.dev",
+    "license": ["GPL-2.0-or-later"],
+    "keywords": ["TYPO3 CMS"],
+    "require": {
+        "typo3/cms-core": "^11.5",
+        "typo3/cms-rte-ckeditor": "^11.5",
+        "typo3/cms-fluid-styled-content": "^11.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "NoCompany\\SvelteDemo\\": "Classes/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "svelte_demo"
+        }
+    }
+}

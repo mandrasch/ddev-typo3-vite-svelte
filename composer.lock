@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8e38d3aed3f17f9ee095a3ffe43711bd",
+    "content-hash": "509b489f9d7d9790401f485eaa582eba",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -1520,6 +1520,41 @@
                 "source": "https://github.com/nikic/PHP-Parser/tree/v4.15.2"
             },
             "time": "2022-11-12T15:38:23+00:00"
+        },
+        {
+            "name": "no-company/svelte-demo",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "./packages/svelte_demo",
+                "reference": "999d119e155add2403837e117635c64140b31f6f"
+            },
+            "require": {
+                "typo3/cms-core": "^11.5",
+                "typo3/cms-fluid-styled-content": "^11.5",
+                "typo3/cms-rte-ckeditor": "^11.5"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "svelte_demo"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "NoCompany\\SvelteDemo\\": "Classes/"
+                }
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "homepage": "https://mandrasch.dev",
+            "keywords": [
+                "TYPO3 CMS"
+            ],
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -6968,7 +7003,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "no-company/svelte-demo": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

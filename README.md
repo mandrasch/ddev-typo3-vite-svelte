@@ -20,6 +20,13 @@ ddev config --project-type=typo3 --docroot=public --create-docroot --php-version
 # Selected "Create empty starting page ""
 ```
 
+- Created sitepackage via https://www.sitepackagebuilder.com/ (fluid + 11.5)
+- Copy package to new folder `packages`
+- Installed package via composer
+    - docs: https://docs.typo3.org/m/typo3/tutorial-sitepackage/main/en-us/ExtensionInstallation/Index.html#extension-installation-in-composer-mode
+    - `ddev composer require no-company/svelte-demo:@dev`
+
+
 NodeJS Installation:
 
 ```bash
@@ -45,6 +52,5 @@ Created `.ddev/env` for npm:
 
 ```
 
-- Created sitepackage via https://www.sitepackagebuilder.com/ (fluid + 11.5)
-- Installed package via composer https://docs.typo3.org/m/typo3/tutorial-sitepackage/main/en-us/ExtensionInstallation/Index.html#extension-installation-in-composer-mode
+
 - Used typoscript snippets for loading vite from https://github.com/fgeierst/typo3-vite-demo
