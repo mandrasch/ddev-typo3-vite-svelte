@@ -136,6 +136,8 @@ Thanks to https://blog.blue-side.de/2021/02/benutzung-von-env-in-typo3/.
 
 ## Other resources
 
+Looking for LaravelMix? Coming soon! (https://github.com/mandrasch/ddev-typo3-mix-svelte)
+
 Interested in WordPress development? https://github.com/mandrasch/ddev-wp-acf-blocks-svelte
 
 See https://my-ddev-lab.mandrasch.eu/ for more experiments.
