@@ -71,7 +71,7 @@ ddev-viteserve installation:
 ```bash
 ddev get torenware/ddev-viteserve
 ddev restart
-
+```
 
 Created `.ddev/env` for npm:
 
