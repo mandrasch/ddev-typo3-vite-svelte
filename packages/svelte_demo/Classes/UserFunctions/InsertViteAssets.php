@@ -24,8 +24,8 @@ final class InsertViteAssets
 
         // Build urls, these are the public HTTP paths
         $path = '/typo3conf/ext/svelte_demo/Resources/Public/CompiledJavaScript/';
-        $scriptSrc = $path . $manifest['main.js']['file'];
-        $stylesheetHref = $path . $manifest['main.js']['css'][0];
+        $scriptSrc = $path . $manifest['packages/svelte_demo/Resources/Private/JavaScript/main.js']['file'];
+        $stylesheetHref = $path . $manifest['packages/svelte_demo/Resources/Private/JavaScript/main.js']['css'][0];
 
         // Return script and link tags
         $content = '<!-- Vite Assets -->';

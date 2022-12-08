@@ -144,7 +144,7 @@ page {
     }
 
     includeCSS {
-        svelte_demo_layout = EXT:svelte_demo/Resources/Public/Css/layout.min.css
+        svelte_demo_layout = EXT:svelte_demo/Resources/Public/Css/layout.css
     }
 
     includeJSLibs {
