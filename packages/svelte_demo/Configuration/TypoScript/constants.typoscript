@@ -47,7 +47,7 @@ page {
 ### CONFIG ###
 ##############
 config {
-    no_cache = 0
+    no_cache = 1
     removeDefaultJS = 0
     admPanel = 1
     prefixLocalAnchors = all
