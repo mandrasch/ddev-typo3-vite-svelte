@@ -2,11 +2,11 @@
 
 Svelte meets typo3 + vite in DDEV. 🧡 
 
+Fork of [fgeierst/typo3-vite-demo](https://github.com/fgeierst/typo3-vite-demo). Status: Work in Progress. 🧑‍🔧
+
 ![Screenshot block with svelte input binding](.gh-screenshots/teaser.png?raw=true)
 
-This demo repository is a fork of [fgeierst/typo3-vite-demo](https://github.com/fgeierst/typo3-vite-demo). 
-
-Status: Work in Progress. 🧑‍🔧
+This demo uses: 
 
 - https://github.com/drud/ddev ([Discord](https://discord.gg/hCZFfAMc5k))
 - https://github.com/torenware/ddev-viteserve
@@ -16,7 +16,7 @@ Status: Work in Progress. 🧑‍🔧
 
 Thanks very much to [@bokunomaxi](https://github.com/bokunomaxi) for typo3 support! Looking for a solution for LaravelMix + Svelte? We're working on a demo repository as well!
 
-Disclaimer: I'm a typo3 noob. Suggestions welcome.
+Disclaimer: I'm a typo3 noob. Suggestions for improvement welcome ;-)
 
 ## Local setup (first time)
 
@@ -133,3 +133,9 @@ Use dotenv-connector for fast switch between `Production/Live` and `Development/
 - `ddev composer req helhum/dotenv-connector`
 
 Thanks to https://blog.blue-side.de/2021/02/benutzung-von-env-in-typo3/. 
+
+## Other resources
+
+Interested in WordPress development? https://github.com/mandrasch/ddev-wp-acf-blocks-svelte
+
+See https://my-ddev-lab.mandrasch.eu/ for more experiments.
