@@ -140,3 +140,8 @@ Looking for LaravelMix? Coming soon! (https://github.com/mandrasch/ddev-typo3-mi
 Interested in WordPress development? https://github.com/mandrasch/ddev-wp-acf-blocks-svelte
 
 See https://my-ddev-lab.mandrasch.eu/ for more experiments.
+
+## TODOs
+
+- [ ] Add gitpod support? (https://github.com/fgeierst/typo3-vite-demo)
+- [ ] Add support for `<style lang="scss">`
