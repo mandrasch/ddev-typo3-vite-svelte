@@ -11,3 +11,6 @@ nbproject
 !/public/typo3conf/LocalConfiguration.php
 !/public/typo3conf/AdditionalConfiguration.php
 /node_modules
+/.env
+
+!/.ddev/.env
