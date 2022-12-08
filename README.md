@@ -2,7 +2,9 @@
 
 Svelte meets typo3 + vite in DDEV. 🧡 
 
-Fork of [fgeierst/typo3-vite-demo](https://github.com/fgeierst/typo3-vite-demo). Status: Work in Progress. 🧑‍🔧
+Fork of [fgeierst/typo3-vite-demo](https://github.com/fgeierst/typo3-vite-demo). 
+
+Status: Work in Progress. 🧑‍🔧
 
 ![Screenshot block with svelte input binding](.gh-screenshots/teaser.png?raw=true)
 
@@ -143,5 +145,6 @@ See https://my-ddev-lab.mandrasch.eu/ for more experiments.
 
 ## TODOs
 
-- [ ] Add gitpod support? (https://github.com/fgeierst/typo3-vite-demo)
+- [ ] Add gitpod support? (see: https://github.com/fgeierst/typo3-vite-demo)
 - [ ] Add support for `<style lang="scss">`
+- [ ] Add props for svelte components (see: https://github.com/mandrasch/ddev-wp-acf-blocks-svelte)
