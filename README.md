@@ -29,6 +29,7 @@ ddev start && \
     ddev exec 'cp .env.example .env' && \
     ddev composer install && \
     ddev snapshot restore --latest && \
+    ddev npm install && \
     ddev launch
 ```
 
