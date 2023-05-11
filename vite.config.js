@@ -11,7 +11,7 @@ export default defineConfig({
     server: {
         host: "0.0.0.0", // leave this unchanged for DDEV!
         port: 5173,
-        origin: 'https://ddev-typo3-vite-svelte.ddev.site' // TODO: is this necessary?
+        origin: ''
     },
     publicDir: false, // disable copy `public/` to outDir
     build: {
